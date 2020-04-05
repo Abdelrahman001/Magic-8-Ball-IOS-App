@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Magic_8_Ball" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled design" translatesAutoresizingMaskIntoConstraints="NO" id="AIv-Qg-rWJ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="zBI-Su-ing">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VNS-Qg-riI" userLabel="Top View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="271.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="XDA-d2-v5A" userLabel="The Magic Ball Ask Me Anything...">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="271.5"/>
+                                                <string key="text">The Magic Ball
+Ask Me Anything...</string>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="40"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="XDA-d2-v5A" firstAttribute="top" secondItem="VNS-Qg-riI" secondAttribute="top" id="HGF-qJ-0Yp"/>
+                                            <constraint firstAttribute="trailing" secondItem="XDA-d2-v5A" secondAttribute="trailing" id="HNJ-ZV-Qlm"/>
+                                            <constraint firstItem="XDA-d2-v5A" firstAttribute="leading" secondItem="VNS-Qg-riI" secondAttribute="leading" id="KTs-la-O1P"/>
+                                            <constraint firstAttribute="bottom" secondItem="XDA-d2-v5A" secondAttribute="bottom" id="jbd-lS-a4k"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dkw-eo-L5K" userLabel="Middle View">
+                                        <rect key="frame" x="0.0" y="273.5" width="414" height="271"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball1" translatesAutoresizingMaskIntoConstraints="NO" id="j1k-4S-Vst">
+                                                <rect key="frame" x="0.0" y="2" width="414" height="269"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="j1k-4S-Vst" firstAttribute="top" secondItem="dkw-eo-L5K" secondAttribute="top" constant="2" id="5As-ER-cA2"/>
+                                            <constraint firstAttribute="trailing" secondItem="j1k-4S-Vst" secondAttribute="trailing" id="FJx-5g-ReR"/>
+                                            <constraint firstItem="j1k-4S-Vst" firstAttribute="leading" secondItem="dkw-eo-L5K" secondAttribute="leading" id="VRx-1v-Bo9"/>
+                                            <constraint firstAttribute="bottom" secondItem="j1k-4S-Vst" secondAttribute="bottom" id="vb0-rw-Igu"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kL6-2Z-tn0" userLabel="Bottom View">
+                                        <rect key="frame" x="0.0" y="546.5" width="414" height="271.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGV-Yx-IVC">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="271.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="42"/>
+                                                <state key="normal" title="Get The Answer !">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="askButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dvz-kv-2Av"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="nGV-Yx-IVC" firstAttribute="top" secondItem="kL6-2Z-tn0" secondAttribute="top" id="1nE-LI-v5s"/>
+                                            <constraint firstAttribute="trailing" secondItem="nGV-Yx-IVC" secondAttribute="trailing" id="ByJ-AT-77b"/>
+                                            <constraint firstItem="nGV-Yx-IVC" firstAttribute="leading" secondItem="kL6-2Z-tn0" secondAttribute="leading" id="IRG-70-owf"/>
+                                            <constraint firstAttribute="bottom" secondItem="nGV-Yx-IVC" secondAttribute="bottom" id="O8r-jM-1CL"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="dkw-eo-L5K" secondAttribute="trailing" id="9Ca-S8-Z5t"/>
+                                    <constraint firstItem="dkw-eo-L5K" firstAttribute="top" secondItem="VNS-Qg-riI" secondAttribute="bottom" constant="2" id="9zg-qb-9Pp"/>
+                                    <constraint firstItem="dkw-eo-L5K" firstAttribute="top" secondItem="VNS-Qg-riI" secondAttribute="bottom" constant="2" id="CqW-Y7-A8h"/>
+                                    <constraint firstAttribute="bottom" secondItem="kL6-2Z-tn0" secondAttribute="bottom" id="IBF-he-339"/>
+                                    <constraint firstAttribute="trailing" secondItem="kL6-2Z-tn0" secondAttribute="trailing" id="LqU-xL-BcR"/>
+                                    <constraint firstItem="VNS-Qg-riI" firstAttribute="leading" secondItem="zBI-Su-ing" secondAttribute="leading" id="Qc2-zH-cgI"/>
+                                    <constraint firstItem="VNS-Qg-riI" firstAttribute="top" secondItem="zBI-Su-ing" secondAttribute="top" id="Rpd-uY-YxT"/>
+                                    <constraint firstAttribute="trailing" secondItem="VNS-Qg-riI" secondAttribute="trailing" id="U7O-uk-6hq"/>
+                                    <constraint firstItem="kL6-2Z-tn0" firstAttribute="top" secondItem="dkw-eo-L5K" secondAttribute="bottom" constant="2" id="ZdD-Tx-bAW"/>
+                                    <constraint firstItem="kL6-2Z-tn0" firstAttribute="leading" secondItem="zBI-Su-ing" secondAttribute="leading" id="Zj1-tL-Qsv"/>
+                                    <constraint firstItem="dkw-eo-L5K" firstAttribute="leading" secondItem="zBI-Su-ing" secondAttribute="leading" id="q7M-nN-k8w"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.46131207191780821" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zBI-Su-ing" secondAttribute="trailing" id="3bF-3c-Jdd"/>
+                            <constraint firstAttribute="trailing" secondItem="AIv-Qg-rWJ" secondAttribute="trailing" id="Cyu-Df-nAI"/>
+                            <constraint firstItem="zBI-Su-ing" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Umr-Wm-ZBH"/>
+                            <constraint firstItem="zBI-Su-ing" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ViY-iG-hzZ"/>
+                            <constraint firstAttribute="bottom" secondItem="AIv-Qg-rWJ" secondAttribute="bottom" id="m7m-dM-4vw"/>
+                            <constraint firstItem="zBI-Su-ing" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="wrw-tI-CW5"/>
+                            <constraint firstItem="AIv-Qg-rWJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yFZ-TI-t3g"/>
+                            <constraint firstItem="AIv-Qg-rWJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yzM-ZS-KqM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="j1k-4S-Vst" id="dt2-2Z-g75"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Untitled design" width="341" height="341"/>
+        <image name="ball1" width="305" height="273.5"/>
+    </resources>
+</document>
